@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app {
+    @apply bg-neutral-900 h-screen w-screen flex flex-col;
+  }
+
+  .controls {
+    @apply h-24 bg-neutral-800 flex justify-between;
+  }
+
+  .drum-grid {
+    @apply h-full w-full grid grid-cols-4 p-8 gap-4;
+  }
+
+  .drum {
+    @apply rounded-md bg-neutral-800 active:bg-neutral-700 cursor-pointer duration-75 flex justify-center items-center;
+  }
+
+  .drum-icon {
+    @apply w-16 h-16 pointer-events-none select-none;
+  }
+}
